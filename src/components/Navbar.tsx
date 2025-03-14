@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-serif font-bold text-salon-dark">
+              <span className={`text-2xl font-serif font-bold ${scrolled ? 'text-salon-dark' : 'text-white'}`}>
                 The Hair <span className="text-salon-pink">Messiah</span>
               </span>
             </Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-salon-dark hover:text-salon-pink focus:outline-none"
+              className={`inline-flex items-center justify-center p-2 rounded-md ${scrolled ? 'text-salon-dark hover:text-salon-pink' : 'text-white hover:text-salon-pink'} focus:outline-none`}
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
@@ -72,7 +72,7 @@ const Navbar = () => {
                 className={`text-sm font-medium tracking-wide transition-colors hover:text-salon-pink ${
                   isActive(link.path) 
                     ? 'text-salon-pink relative after:content-[""] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-salon-pink' 
-                    : 'text-salon-dark'
+                    : scrolled ? 'text-salon-dark' : 'text-white'
                 }`}
               >
                 {link.name}
