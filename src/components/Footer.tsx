@@ -58,14 +58,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a 
-                  href="https://thehairmessiahllc.as.me" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-salon-dark/80 hover:text-salon-pink transition-colors"
-                >
+                <Link to="/book-now" className="text-sm text-salon-dark/80 hover:text-salon-pink transition-colors">
                   Book Appointment
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

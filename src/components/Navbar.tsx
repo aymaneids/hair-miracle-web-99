@@ -34,6 +34,7 @@ const Navbar = () => {
     { name: 'Services', path: '/services' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Book Now', path: '/book-now' },
   ];
 
   const isActive = (path: string) => {
@@ -78,14 +79,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <a
-              href="https://thehairmessiahllc.as.me"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-sm"
-            >
-              Book Now
-            </a>
           </div>
         </div>
       </div>
@@ -107,14 +100,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <a
-              href="https://thehairmessiahllc.as.me"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-center mt-4"
-            >
-              Book Now
-            </a>
           </div>
         </div>
       )}
