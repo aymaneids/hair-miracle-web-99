@@ -1,4 +1,3 @@
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Scissors, Heart, Award, FileText, ChevronRight, ArrowRight } from "lucide-react";
@@ -201,11 +200,11 @@ const Services = () => {
         </section>
         
         {/* Detailed Service Sections */}
-        {mainServices.map((service) => (
+        {mainServices.map((service, index) => (
           <section 
             key={service.id} 
             id={service.id}
-            className={`py-16 md:py-24 ${service.id % 2 === 0 ? 'bg-salon-light' : 'bg-white'}`}
+            className={`py-16 md:py-24 ${index % 2 === 0 ? 'bg-salon-light' : 'bg-white'}`}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
@@ -219,8 +218,8 @@ const Services = () => {
               </div>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {service.styles.map((style, index) => (
-                  <div key={index} className="glass-card overflow-hidden transition-all duration-300 hover:shadow-xl">
+                {service.styles.map((style, styleIndex) => (
+                  <div key={styleIndex} className="glass-card overflow-hidden transition-all duration-300 hover:shadow-xl">
                     <div className="h-56 overflow-hidden">
                       <img 
                         src={style.image} 
