@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Scissors, Heart, Calendar, FileText, Award, ChevronRight, MapPin } from 'lucide-react';
@@ -91,8 +90,8 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10"></div>
           <img
-            src="https://images.unsplash.com/photo-1595944024804-5f64b8623d3e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3"
-            alt="Beautiful braided hairstyle"
+            src="https://img.freepik.com/premium-photo/woman-with-sleek-straight-hair-parted-middle-posing-against-minimalist-background-highlight-simplicity-elegance-her-style_1229213-60889.jpg"
+            alt="Beautiful sleek hairstyle"
             className="w-full h-full object-cover"
           />
         </div>
@@ -125,6 +124,7 @@ const Index = () => {
         </div>
       </section>
       
+      {/* Rest of the sections */}
       {/* About Section */}
       <section className="content-section fade-in-section">
         <div className="grid md:grid-cols-2 gap-12 items-center">
