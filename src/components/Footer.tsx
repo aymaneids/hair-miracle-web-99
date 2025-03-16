@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-serif font-bold text-salon-dark mb-4">
-              The Hair <span className="text-salon-pink">Messiah</span>
+              Salon<span className="text-salon-pink">Sase</span>
             </h3>
             <p className="text-sm text-salon-dark/80 mb-6 max-w-xs">
               Expert hair braiding and extension services for those who seek the divine in beauty.
@@ -80,8 +80,8 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-2 text-salon-pink flex-shrink-0 mt-0.5" />
-                <a href="mailto:contact@thehairmessiah.com" className="text-sm text-salon-dark/80 hover:text-salon-pink transition-colors">
-                  contact@thehairmessiah.com
+                <a href="mailto:contact@salonsase.com" className="text-sm text-salon-dark/80 hover:text-salon-pink transition-colors">
+                  contact@salonsase.com
                 </a>
               </li>
               <li className="flex items-start">
@@ -98,7 +98,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-salon-pink/10">
           <p className="text-sm text-center text-salon-dark/60">
-            © {currentYear} The Hair Messiah, LLC. All rights reserved.
+            © {currentYear} SalonSase, LLC. All rights reserved.
           </p>
         </div>
       </div>

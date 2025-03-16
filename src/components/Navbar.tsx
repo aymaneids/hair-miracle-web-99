@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <span className={`text-2xl font-serif font-bold ${scrolled ? 'text-salon-dark' : 'text-white'}`}>
-                The Hair <span className="text-salon-pink">Messiah</span>
+                Salon<span className="text-salon-pink">Sase</span>
               </span>
             </Link>
           </div>
