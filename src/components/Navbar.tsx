@@ -8,6 +8,12 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const isContactPage = location.pathname === '/contact';
+  const isAboutPage = location.pathname === '/about';
+  const isServicesPage = location.pathname === '/services';
+  const isGalleryPage = location.pathname === '/gallery';
+  
+  // Check if the current page should have gray navbar
+  const isGrayNavbar = isAboutPage || isServicesPage || isGalleryPage;
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -48,22 +54,26 @@ const Navbar = () => {
         ? scrolled 
           ? 'bg-gray-300/90 backdrop-blur-md shadow-md py-2' 
           : 'bg-gray-400 py-4'
-        : scrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-md py-2' 
-          : 'bg-transparent py-4'
+        : isGrayNavbar
+          ? scrolled
+            ? 'bg-gray-300/90 backdrop-blur-md shadow-md py-2'
+            : 'bg-gray-400 py-4'
+          : scrolled 
+            ? 'bg-white/90 backdrop-blur-md shadow-md py-2' 
+            : 'bg-transparent py-4'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <span className={`text-2xl font-serif font-bold ${
-                isContactPage
+                isContactPage || isGrayNavbar
                   ? 'text-white'
                   : scrolled 
                     ? 'text-salon-dark' 
                     : 'text-white'
               }`}>
-                Salon<span className="text-salon-pink">Sase</span>
+                TEGO<span className="text-salon-pink">NAIL SPA</span>
               </span>
             </Link>
           </div>
@@ -73,7 +83,7 @@ const Navbar = () => {
             <button 
               onClick={() => setIsOpen(!isOpen)}
               className={`inline-flex items-center justify-center p-2 rounded-md ${
-                isContactPage
+                isContactPage || isGrayNavbar
                   ? 'text-white hover:text-salon-pink'
                   : scrolled 
                     ? 'text-salon-dark hover:text-salon-pink' 
@@ -94,7 +104,7 @@ const Navbar = () => {
                 className={`text-sm font-medium tracking-wide transition-colors hover:text-salon-pink ${
                   isActive(link.path) 
                     ? 'text-salon-pink relative after:content-[""] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-salon-pink' 
-                    : isContactPage
+                    : isContactPage || isGrayNavbar
                       ? 'text-white'
                       : scrolled 
                         ? 'text-salon-dark' 

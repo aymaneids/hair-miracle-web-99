@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Scissors, Heart, Calendar, FileText, Award, ChevronRight, MapPin } from 'lucide-react';
@@ -34,51 +35,62 @@ const Index = () => {
 
   const services = [
     {
-      title: "Braid Extensions",
-      description: "Custom braiding styles designed to enhance your natural beauty while protecting your hair.",
+      title: "Nail Services",
+      description: "Premium quality nail services including no chip, dip, and gel manicures.",
       icon: <Scissors size={20} />,
       link: "/services",
-      imageSrc: "https://images.unsplash.com/photo-1605980776566-0486c3ac7617?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3"
+      imageSrc: "https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3"
     },
     {
-      title: "Hair Extensions",
-      description: "Premium quality hair extensions that blend seamlessly with your natural hair.",
+      title: "Nail Art",
+      description: "Creative and custom nail art designs to express your unique style.",
       icon: <Heart size={20} />,
       link: "/services",
-      imageSrc: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3"
+      imageSrc: "https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3"
     },
     {
-      title: "Nail Glam",
-      description: "Exquisite nail treatments to complement your stunning hairstyle.",
+      title: "Acrylics",
+      description: "Professional acrylic nail extensions for length and durability.",
       icon: <Award size={20} />,
       link: "/services",
-      imageSrc: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3"
+      imageSrc: "https://images.unsplash.com/photo-1632344004476-3ceec8315d1c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3"
     },
     {
-      title: "Hair Classes",
-      description: "Learn professional hair techniques from our experienced stylists.",
+      title: "Pedicures",
+      description: "Relaxing and rejuvenating pedicure treatments for healthy feet.",
       icon: <FileText size={20} />,
       link: "/services",
-      imageSrc: "https://images.unsplash.com/photo-1516914589923-f105f1535f88?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3"
+      imageSrc: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3"
     }
   ];
 
   const testimonials = [
     {
       name: "Alexandra S.",
-      quote: "The Hair Messiah transformed my look completely! My braids were perfect and lasted much longer than I expected. Best salon experience I've ever had.",
+      quote: "TEGO NAIL SPA provides the best nail services in Chicago! I love the attention to detail and the friendly staff.",
       rating: 5
     },
     {
       name: "Michelle T.",
-      quote: "I've been to many stylists, but no one understands my hair like The Hair Messiah. Professional, attentive, and truly talented!",
+      quote: "I've tried many nail salons, but no one understands nail art like TEGO. Professional, attentive, and truly talented!",
       rating: 5
     },
     {
       name: "Jasmine R.",
-      quote: "My extensions look so natural that even my close friends couldn't tell! Absolutely worth every penny.",
+      quote: "The acrylic nail extensions I got at TEGO lasted longer than any other salon. Absolutely worth every penny!",
       rating: 5
     }
+  ];
+
+  const galleryImages = [
+    "https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "https://images.unsplash.com/photo-1632344004476-3ceec8315d1c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "https://images.unsplash.com/photo-1621799754526-a0d52c49fad5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "https://images.unsplash.com/photo-1600428853876-fb5a850b444f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3"
   ];
 
   return (
@@ -90,8 +102,8 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10"></div>
           <img
-            src="https://img.freepik.com/premium-photo/woman-with-sleek-straight-hair-parted-middle-posing-against-minimalist-background-highlight-simplicity-elegance-her-style_1229213-60889.jpg"
-            alt="Beautiful sleek hairstyle"
+            src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3"
+            alt="Beautiful nail art"
             className="w-full h-full object-cover"
           />
         </div>
@@ -99,23 +111,21 @@ const Index = () => {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
           <div className="max-w-2xl">
             <span className="inline-block text-white/80 text-sm font-medium px-3 py-1 border border-white/20 rounded-full mb-4 backdrop-blur-sm bg-white/10 animate-fade-in">
-              Licensed Cosmetologist in Forest Park, IL
+              Professional Nail Salon in Chicago, IL
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              The Hair Messiah, LLC
+              TEGO NAIL SPA
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              Elevate Your Hair Experience with Expert Braiding and Extensions
+              Beauté, cosmétique et soins. No chip, dip, nail art, acrylics, and manicure & pedicure services💅
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <a
-                href="https://thehairmessiahllc.as.me"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/book-now"
                 className="btn-primary"
               >
                 Book Appointment
-              </a>
+              </Link>
               <Link to="/services" className="btn-secondary bg-white/20 text-white border-white/40 hover:bg-white/30">
                 View Services
               </Link>
@@ -124,18 +134,17 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Rest of the sections */}
       {/* About Section */}
       <section className="content-section fade-in-section">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-block text-salon-pink font-medium mb-2">About Us</span>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
-              Divine Hair Transformations
+              Exceptional Nail Care Experience
             </h2>
             <p className="text-salon-dark/80 mb-6">
-              At The Hair Messiah, LLC, we believe everyone deserves to look and feel divine. As a licensed cosmetologist specializing in braids and hair extensions, 
-              we're dedicated to creating styles that enhance your natural beauty while maintaining the health of your hair.
+              At TEGO NAIL SPA, we believe everyone deserves to look and feel their best. As licensed nail technicians specializing in nail art and treatments, 
+              we're dedicated to creating styles that enhance your natural beauty while maintaining the health of your nails.
             </p>
             <p className="text-salon-dark/80 mb-8">
               Our salon offers a serene, welcoming environment where you can relax while we transform your look. We take pride in our attention to detail and commitment to client satisfaction.
@@ -146,8 +155,8 @@ const Index = () => {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1630149462311-cbc8b1f8194b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3"
-              alt="Hair stylist at work"
+              src="https://images.unsplash.com/photo-1607779097040-0a3d53e62105?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3"
+              alt="Nail technician at work"
               className="w-full h-auto rounded-lg shadow-xl"
             />
             <div className="absolute -bottom-6 -left-6 p-4 glass-card shadow-lg max-w-xs">
@@ -156,8 +165,8 @@ const Index = () => {
                   <Award size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">Licensed Professional</p>
-                  <p className="text-xs text-salon-dark/70">Certified Cosmetologist</p>
+                  <p className="text-sm font-medium">Licensed Professionals</p>
+                  <p className="text-xs text-salon-dark/70">Certified Nail Technicians</p>
                 </div>
               </div>
             </div>
@@ -171,10 +180,10 @@ const Index = () => {
           <div className="text-center mb-16">
             <span className="inline-block text-salon-pink font-medium mb-2">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
-              Exceptional Hair Services
+              Exceptional Nail Services
             </h2>
             <p className="text-salon-dark/80 max-w-2xl mx-auto">
-              We offer a wide range of premium hair services designed to meet your unique style preferences and needs.
+              We offer a wide range of premium nail services designed to meet your unique style preferences and needs.
             </p>
           </div>
           
@@ -212,11 +221,11 @@ const Index = () => {
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-            <div key={num} className="relative overflow-hidden rounded-lg aspect-square group">
+          {galleryImages.map((image, index) => (
+            <div key={index} className="relative overflow-hidden rounded-lg aspect-square group">
               <img
-                src={`https://source.unsplash.com/random/300x300?hair,braids&sig=${num}`}
-                alt={`Gallery image ${num}`}
+                src={image}
+                alt={`Gallery image ${index + 1}`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
@@ -261,29 +270,27 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10"></div>
           <img
-            src="https://images.unsplash.com/photo-1590383324653-38b1f99d9a8f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3"
-            alt="Beautiful hairstyle"
+            src="https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3"
+            alt="Beautiful nail art"
             className="w-full h-full object-cover"
           />
         </div>
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-medium text-white mb-6">
-            Ready for Your Hair Transformation?
+            Ready for Your Nail Transformation?
           </h2>
           <p className="text-white/90 max-w-2xl mx-auto mb-8">
-            Book your appointment today and experience the divine difference with The Hair Messiah, LLC.
+            Book your appointment today and experience the excellence of TEGO NAIL SPA.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="https://thehairmessiahllc.as.me"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/book-now"
               className="btn-primary"
             >
               <Calendar size={18} className="mr-2" />
               Book Appointment
-            </a>
+            </Link>
             <Link to="/contact" className="btn-secondary bg-white/20 text-white border-white/40 hover:bg-white/30">
               <MapPin size={18} className="mr-2" />
               Contact Us

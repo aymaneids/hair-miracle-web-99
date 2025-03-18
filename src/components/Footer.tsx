@@ -11,14 +11,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-serif font-bold text-salon-dark mb-4">
-              Salon<span className="text-salon-pink">Sase</span>
+              TEGO<span className="text-salon-pink">NAIL SPA</span>
             </h3>
             <p className="text-sm text-salon-dark/80 mb-6 max-w-xs">
-              Expert hair braiding and extension services for those who seek the divine in beauty.
+              Beauté, cosmétique et soins. No chip, dip, nail art, acrylics, and manicure & pedicure services💅
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com/iamthehairmessiah" 
+                href="https://instagram.com/tego_nails" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-salon-dark hover:text-salon-pink transition-colors"
@@ -70,18 +70,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 text-salon-pink flex-shrink-0 mt-0.5" />
-                <span className="text-sm text-salon-dark/80">Forest Park, IL 60130</span>
+                <span className="text-sm text-salon-dark/80">1731 N Western Ave, Chicago, Illinois 60647</span>
               </li>
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 text-salon-pink flex-shrink-0 mt-0.5" />
-                <a href="tel:+1234567890" className="text-sm text-salon-dark/80 hover:text-salon-pink transition-colors">
-                  (123) 456-7890
+                <a href="tel:+17732524444" className="text-sm text-salon-dark/80 hover:text-salon-pink transition-colors">
+                  Call For Appointment: (773) 252-4444
                 </a>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-2 text-salon-pink flex-shrink-0 mt-0.5" />
-                <a href="mailto:contact@salonsase.com" className="text-sm text-salon-dark/80 hover:text-salon-pink transition-colors">
-                  contact@salonsase.com
+                <a href="mailto:contact@tegonailspa.com" className="text-sm text-salon-dark/80 hover:text-salon-pink transition-colors">
+                  contact@tegonailspa.com
                 </a>
               </li>
               <li className="flex items-start">
@@ -98,7 +98,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-salon-pink/10">
           <p className="text-sm text-center text-salon-dark/60">
-            © {currentYear} SalonSase, LLC. All rights reserved.
+            © {currentYear} TEGO NAIL SPA. All rights reserved.
           </p>
         </div>
       </div>
